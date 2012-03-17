@@ -1,0 +1,23 @@
+
+FGateway is an HTTP abstraction and utility library.
+
+  * Common interface (record type, actually) for HTTP requests and responses
+  * Wrapper for ASP.NET
+  * Wrapper for HttpListener
+  * Small but growing library of helper functions
+  
+Dependencies (included):
+
+  * FSharp PowerPack
+  * Futility: https://github.com/danfinch/futility
+  
+License: Apache 2.0
+
+Copyrights:
+
+  * All code (c) 2012 Promitheia
+
+Maintainers:
+
+  * Dan Finch (d@nfin.ch)
+
