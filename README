@@ -6,9 +6,8 @@ FGateway is an HTTP abstraction and utility library.
   * Wrapper for HttpListener
   * Small but growing library of helper functions
   
-Dependencies (included):
+Dependencies (submodules):
 
-  * FSharp PowerPack
   * Futility: https://github.com/danfinch/futility
   
 License: Apache 2.0
