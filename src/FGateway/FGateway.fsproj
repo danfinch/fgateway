@@ -5,11 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5fda2352-91cf-402f-8a5a-093c9d951728}</ProjectGuid>
+    <ProjectGuid>{5FDA2352-91CF-402F-8A5A-093C9D951728}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>FGateway</RootNamespace>
     <AssemblyName>FGateway</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Name>FGateway</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,20 +31,14 @@
     <DocumentationFile>bin\Release\FGateway.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.PowerPack">
-      <HintPath>..\..\lib\powerpack\bin\FSharp.PowerPack.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Futility">
-      <HintPath>..\..\lib\futility\$(Configuration)\Futility.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Web" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model.fs" />
@@ -61,4 +54,10 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\futility\src\Futility\Futility.fsproj">
+      <Project>9982C39B-74B0-4B7A-B658-905777359DAD</Project>
+      <Name>Futility</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
